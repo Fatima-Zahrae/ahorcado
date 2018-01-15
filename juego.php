@@ -24,8 +24,10 @@ if(preg_match("%[a-z]%", $letra)  && !in_array($letra, $arrayletras)){
                 echo $letra." ";
                 $coincedencia = true ;
                 $aciertos++;
+                if($letra == $arrayletras[count($arrayletras-1)]){
                 $estaocacionhaacertado = true;
                 //echo "numero de eciertos ".$aciertos;
+                }
             }
         }
         if(!$coincedencia){
